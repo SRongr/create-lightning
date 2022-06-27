@@ -1,0 +1,23 @@
+import React from 'react'
+
+type Props = {}
+export class <#C> extends React.PureComponent<Props> {
+  constructor(props: Props) {
+    super(props);
+    this.props.resetStore();
+  }
+
+  render() {
+    return (
+      <div style={styles.container} />
+    );
+  }
+}
+
+const styles = {
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
+  }
+}
