@@ -55,6 +55,11 @@
 			}
 		]
 	},
+	"lint-staged": {
+		"src/**/*.{js,.vue,.ts}": [
+			"yarn lint"
+		]
+	},
 	"scripts": {
 		"build": "vsce package",
 		"vscode:prepublish": "yarn run compile",
