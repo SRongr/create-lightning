@@ -56,8 +56,8 @@
 		]
 	},
 	"lint-staged": {
-		"src/**/*.{js,.vue,.ts}": [
-			"yarn lint"
+		"src/**/*.{js,vue,ts}": [
+			"eslint"
 		]
 	},
 	"scripts": {
@@ -67,7 +67,7 @@
 		"watch": "tsc -watch -p ./",
 		"pretest": "yarn run compile && yarn run lint",
 		"lint": "eslint src --ext ts",
-		"lint-staged": "echo 暂不使用",
+		"lint-staged": "lint-staged",
 		"test": "node ./out/test/runTest.js",
 		"prepare": "npx husky install"
 	},
